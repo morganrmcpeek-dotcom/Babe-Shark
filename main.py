@@ -1,5 +1,5 @@
 """----------------------------------------------------------------
-Name:       your name
+Name:       Morgan McPeek
 Assignment: Lab - Baby Shark
 Course:     CS 1430, Section X, Fall 2026
 Purpose:    This program is designed to be practice for Python
@@ -24,30 +24,29 @@ Output: The sound Baby Shark, with three verses:
 ##############
 REPEAT = 3
 
-
+def verse(age):
+    print(age, "Shark,")
+    print("doo-doo-doo-do-do-do-do")
 def main():
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark!")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark!")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark!")
-
+    for _ in range(REPEAT):
+        if _ == 0:
+            age = "Baby"
+            verse(age)
+            verse(age)
+            verse(age)
+            print(age, "Shark!")
+        elif _ == 1:
+            age = "Mommy"
+            verse(age)
+            verse(age)
+            verse(age)
+            print(age, "Shark!")
+        elif _ == 2:
+            age = "Daddy"
+            verse(age)
+            verse(age)
+            verse(age)
+            print(age, "Shark!")
 
 if __name__ == "__main__":
     main()
