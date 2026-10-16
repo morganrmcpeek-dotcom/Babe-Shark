@@ -28,6 +28,7 @@ def verse(age):
     for _ in range(REPEAT):
         print(age, "Shark,")
         print("doo-doo-doo-do-do-do-do")
+    print(age, "Shark!")    
 def main():
     verse("Baby")
     verse("Mommy")
